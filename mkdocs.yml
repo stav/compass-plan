@@ -1,0 +1,42 @@
+site_name: Compass Business Plan
+site_url: https://stav.github.io/compass-plan/
+site_description: Business plan for Compass — a desktop app for solo Medicare insurance agents
+
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Business Plan: index.md
+  - Commission Deep Dive: commission-deep-dive.md
+  - Commission Tracking: commission-tracking.md
+  - Eligibility Research: eligibility-research.md
+  - Tech Stack: tech-stack.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
