@@ -1,0 +1,1705 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Business plan for Compass — a desktop app for solo Medicare insurance agents">
+      
+      
+      
+        <link rel="canonical" href="https://stav.github.io/compass-plan/commission-tracking/">
+      
+      
+        <link rel="prev" href="../commission-deep-dive/">
+      
+      
+        <link rel="next" href="../eligibility-research/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>Commission Tracking - Compass Business Plan</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+<meta name="robots" content="noindex, nofollow">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#insurance-crm-commission-tracking-landscape-20252026" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Compass Business Plan" class="md-header__button md-logo" aria-label="Compass Business Plan" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Compass Business Plan
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Commission Tracking
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Business Plan
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../commission-deep-dive/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Commission Deep Dive
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Commission Tracking
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../eligibility-research/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Eligibility Research
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tech-stack/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tech Stack
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Compass Business Plan" class="md-nav__button md-logo" aria-label="Compass Business Plan" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Compass Business Plan
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Plan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commission-deep-dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commission Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commission Tracking
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commission Tracking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-fundamental-reality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Fundamental Reality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-commission-data-gets-in-the-5-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Commission Data Gets In: The 5 Methods
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform-by-platform-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Platform-by-Platform Breakdown
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Platform-by-Platform Breakdown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#healthlifemedicare-crms-most-relevant-to-compass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Health/Life/Medicare CRMs (Most Relevant to Compass)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pc-focused-ams-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P&amp;C-Focused AMS Platforms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standalone-commission-tracking-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standalone Commission Tracking Software
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-powered-new-entrants-2024-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI-Powered New Entrants (2024-2026)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carrier-side-enterprise-platforms-not-agent-facing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Carrier-Side / Enterprise Platforms (not agent-facing)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commission-data-aggregation-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commission Data Aggregation Middleware
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#medicare-carrier-commission-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medicare Carrier Commission Formats
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#industry-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Industry Standards
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways-for-compass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways for Compass
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sources
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-dive-carrier-portal-scraping-rpa-for-commission-data-feb-2027-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deep Dive: Carrier Portal Scraping &amp; RPA for Commission Data (Feb 2027 Update)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deep Dive: Carrier Portal Scraping &amp; RPA for Commission Data (Feb 2027 Update)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-carrier-connect-carrierconnectai-technical-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Carrier Connect (carrierconnect.ai) — Technical Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-synatic-autodb-commission-technical-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Synatic AutoDB Commission — Technical Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-eleviant-vbots-now-coventus-technical-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Eleviant vBots (now Coventus) — Technical Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-mfaauthentication-handling-how-rpa-bots-solve-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. MFA/Authentication Handling — How RPA Bots Solve It
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-open-source-diy-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Open-Source / DIY Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-legalcompliance-implications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Legal/Compliance Implications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Legal/Compliance Implications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-core-legal-question-is-scraping-a-carrier-portal-legal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Core Legal Question: Is Scraping a Carrier Portal Legal?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-carrier-portal-export-capabilities-current-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Carrier Portal Export Capabilities (Current State)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-fragility-of-scraping-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Fragility of Scraping Approaches
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-non-portal-alternatives-to-scraping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Non-Portal Alternatives to Scraping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-recommendations-for-compass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Recommendations for Compass
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eligibility-research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eligibility Research
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech-stack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tech Stack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="insurance-crm-commission-tracking-landscape-20252026">Insurance CRM &amp; Commission Tracking Landscape (2025/2026)<a class="headerlink" href="#insurance-crm-commission-tracking-landscape-20252026" title="Permanent link">&para;</a></h1>
+<h2 id="the-fundamental-reality">The Fundamental Reality<a class="headerlink" href="#the-fundamental-reality" title="Permanent link">&para;</a></h2>
+<p><strong>No platform has fully automatic commission data ingestion without setup.</strong> Carriers do not offer REST APIs for agents to pull commission data. The industry remains file-based: carriers generate statements (CSV/XLSX/TXT/PDF) in proprietary formats, and agents must download and import them. Every tool requires some form of carrier-specific mapping.</p>
+<hr />
+<h2 id="how-commission-data-gets-in-the-5-methods">How Commission Data Gets In: The 5 Methods<a class="headerlink" href="#how-commission-data-gets-in-the-5-methods" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+<th>Who Uses It</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CSV/Excel upload with carrier mapping</strong></td>
+<td>Download statement from carrier portal, upload to software, use pre-configured "import maps" per carrier</td>
+<td>AgencyBloc, Commission Tracker, Commissionly, NextAgency, QCommission, GreenWave — <strong>most common</strong></td>
+</tr>
+<tr>
+<td><strong>IVANS Download (AL3 format)</strong></td>
+<td>Carrier pushes commission data to agency via IVANS network — automatic, 24/7</td>
+<td>HawkSoft, Applied Epic, EZLynx, NowCerts — <strong>P&amp;C only, health/life carriers rarely participate</strong></td>
+</tr>
+<tr>
+<td><strong>Carrier portal scraping (RPA)</strong></td>
+<td>Bots log into carrier portals overnight, handle MFA, download statements</td>
+<td><strong>BenefitsGuide Carrier Connect</strong> (only one found), Synatic AutoDB, Eleviant vBots</td>
+</tr>
+<tr>
+<td><strong>AI-powered format detection</strong></td>
+<td>Upload any statement format; AI parses it without pre-configured maps</td>
+<td>Fintary, Eventual Treasury, Mivation Xcelerator, Applied Recon — <strong>the emerging frontier</strong></td>
+</tr>
+<tr>
+<td><strong>FMO/upline pass-through</strong></td>
+<td>FMO receives carrier data, distributes to agents via their portal</td>
+<td>IntegrityCONNECT, Ritter Platform</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="platform-by-platform-breakdown">Platform-by-Platform Breakdown<a class="headerlink" href="#platform-by-platform-breakdown" title="Permanent link">&para;</a></h2>
+<h3 id="healthlifemedicare-crms-most-relevant-to-compass">Health/Life/Medicare CRMs (Most Relevant to Compass)<a class="headerlink" href="#healthlifemedicare-crms-most-relevant-to-compass" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Commission Tracking</th>
+<th>Data Ingestion</th>
+<th>Auto-Scrape?</th>
+<th>Pricing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AgencyBloc Commissions+</strong></td>
+<td>Best-in-class for H&amp;L</td>
+<td>CSV upload with carrier import maps, one-click after setup</td>
+<td>No</td>
+<td>~$59-79/user/mo + volume-based commission pricing</td>
+</tr>
+<tr>
+<td><strong>Radiusbob</strong></td>
+<td>Basic</td>
+<td>CSV/Excel upload with mapping</td>
+<td>No</td>
+<td>~$34/mo (acquired by AgencyBloc 2023)</td>
+</tr>
+<tr>
+<td><strong>Insureio</strong></td>
+<td>Basic</td>
+<td>Rigid CSV format, paid custom upload service</td>
+<td>No</td>
+<td>$25-75/mo</td>
+</tr>
+<tr>
+<td><strong>MedicarePRO</strong></td>
+<td>Built-in</td>
+<td>Manual entry + import</td>
+<td>No</td>
+<td>$45-55/user/mo</td>
+</tr>
+<tr>
+<td><strong>ProducerMAX</strong></td>
+<td>Medicare-specific forecasting</td>
+<td>Manual + import, audits underpayments</td>
+<td>No</td>
+<td>Low cost</td>
+</tr>
+<tr>
+<td><strong>IntegrityCONNECT</strong></td>
+<td>Via FMO portal</td>
+<td>Pass-through from Integrity upline</td>
+<td>N/A</td>
+<td>Free (for Integrity agents)</td>
+</tr>
+<tr>
+<td><strong>Agent CRM</strong></td>
+<td><strong>None</strong></td>
+<td>N/A</td>
+<td>No</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Commissionly.io</strong></td>
+<td>Strong</td>
+<td>CSV with carrier templates, flags missing payments</td>
+<td>No</td>
+<td>$899/mo</td>
+</tr>
+<tr>
+<td><strong>NextAgency (NextCommission)</strong></td>
+<td>Strong</td>
+<td>CSV import + audit, also handles PDFs, outsourced data entry service</td>
+<td>No</td>
+<td>$120/mo standalone</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pc-focused-ams-platforms">P&amp;C-Focused AMS Platforms<a class="headerlink" href="#pc-focused-ams-platforms" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Commission Tracking</th>
+<th>Data Ingestion</th>
+<th>IVANS Auto?</th>
+<th>Pricing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Applied Epic</strong></td>
+<td>Best-in-class</td>
+<td>IVANS (owns it) + <strong>Applied Recon AI</strong> (99%+ accuracy, launched Apr 2025)</td>
+<td>Yes</td>
+<td>~$150/user/mo (enterprise)</td>
+</tr>
+<tr>
+<td><strong>HawkSoft</strong></td>
+<td>Yes</td>
+<td>IVANS 24/7 auto-download + CSV/XLS import</td>
+<td>Yes</td>
+<td>Base + ~$94/user/mo</td>
+</tr>
+<tr>
+<td><strong>EZLynx</strong></td>
+<td>Yes</td>
+<td>IVANS + CSV import with templates</td>
+<td>Yes</td>
+<td>~$350/mo</td>
+</tr>
+<tr>
+<td><strong>NowCerts</strong></td>
+<td>Yes</td>
+<td>IVANS ($35/mo add-on) + CSV import</td>
+<td>Yes (add-on)</td>
+<td>$99-295/mo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="standalone-commission-tracking-software">Standalone Commission Tracking Software<a class="headerlink" href="#standalone-commission-tracking-software" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Focus</th>
+<th>Data Ingestion</th>
+<th>Special Features</th>
+<th>Pricing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Commission Tracker</strong></td>
+<td>All insurance</td>
+<td>CSV/Excel/PDF (smart mapping per carrier), PDFx AI converter</td>
+<td>Longest-running pure tracker, auto-emailed producer statements</td>
+<td>$67/mo + $47/mo additional</td>
+</tr>
+<tr>
+<td><strong>QCommission</strong></td>
+<td>All insurance</td>
+<td>Auto-download carrier files, Excel/CSV/TXT/some PDFs</td>
+<td>Broadest accounting integrations (QB, Xero, Sage, NetSuite, Dynamics)</td>
+<td>$15/user/mo - $600/mo</td>
+</tr>
+<tr>
+<td><strong>GreenWave</strong></td>
+<td>Life/Annuity/LTC</td>
+<td>SmartConnect: ACORD XML, CSV, TXT, PDF; direct AMS sync</td>
+<td>Only tool supporting ACORD XML</td>
+<td>Enterprise (custom)</td>
+</tr>
+<tr>
+<td><strong>AgencyComp</strong></td>
+<td>Medicare focus</td>
+<td>Minimal data entry, import templates</td>
+<td>Budget-friendly, MA/PDP-specific modules</td>
+<td>3 tiers (not public)</td>
+</tr>
+<tr>
+<td><strong>Core Commissions</strong></td>
+<td>All insurance</td>
+<td>Carrier statement import, AI-powered</td>
+<td>Full cycle automation</td>
+<td>Custom</td>
+</tr>
+<tr>
+<td><strong>BenefitsGuide</strong></td>
+<td>Employee benefits</td>
+<td><strong>Auto-downloads from carrier portals</strong> (handles MFA overnight)</td>
+<td>The only platform explicitly scraping carrier portals</td>
+<td>Custom (Salesforce-based)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ai-powered-new-entrants-2024-2026">AI-Powered New Entrants (2024-2026)<a class="headerlink" href="#ai-powered-new-entrants-2024-2026" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Funding</th>
+<th>Key Innovation</th>
+<th>Pricing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fintary</strong></td>
+<td>$12.8M (Series A Nov 2025)</td>
+<td>AI extracts from <em>any</em> carrier format, no import maps needed. Revenue leak detection. Integrates with Epic, SmartOffice, BenefitPoint, Salesforce FSC</td>
+<td>Custom</td>
+</tr>
+<tr>
+<td><strong>Eventual Treasury</strong></td>
+<td>Startup</td>
+<td>AI retrieves docs from 1,000+ partners automatically. Reconciliation in seconds. Revenue recovery automation. Churn prediction</td>
+<td>Custom</td>
+</tr>
+<tr>
+<td><strong>Mivation Xcelerator</strong></td>
+<td>PNW InsurTech</td>
+<td>AI statement parsing, near real-time HawkSoft integration. SOC 2 Type II</td>
+<td>Custom</td>
+</tr>
+<tr>
+<td><strong>Ascend</strong></td>
+<td>—</td>
+<td>AI Smart Inbox analyzes incoming statements, auto-reconciles, claims 95% less human involvement</td>
+<td>Custom</td>
+</tr>
+</tbody>
+</table>
+<h3 id="carrier-side-enterprise-platforms-not-agent-facing">Carrier-Side / Enterprise Platforms (not agent-facing)<a class="headerlink" href="#carrier-side-enterprise-platforms-not-agent-facing" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vertafore Sircon Compensation</strong></td>
+<td>Carriers use it to calculate and distribute agent commissions</td>
+</tr>
+<tr>
+<td><strong>EvolveNXT (EvolveICM)</strong></td>
+<td>Powered $5B+ in commission payouts in 2024 across 350K agents. Direct CMS integration for MA. Partnered with ConnectureDRX</td>
+</tr>
+<tr>
+<td><strong>e123 / Abacus</strong></td>
+<td>Distribution management for health plans and FMOs</td>
+</tr>
+<tr>
+<td><strong>SANDIS</strong></td>
+<td>Multi-tier commission handling for MGAs, direct carrier platform integration</td>
+</tr>
+<tr>
+<td><strong>Blitz</strong></td>
+<td>Enterprise commission management, SAP/Dynamics 365 integration</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="commission-data-aggregation-middleware">Commission Data Aggregation Middleware<a class="headerlink" href="#commission-data-aggregation-middleware" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>How It Works</th>
+<th>Integrates With</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Carrier Connect (carrierconnect.ai)</strong></td>
+<td>RPA scrapes carrier portals overnight, handles MFA, downloads statements, normalizes data</td>
+<td>BenefitsGuide, other AMS</td>
+</tr>
+<tr>
+<td><strong>Synatic AutoDB Commission</strong></td>
+<td>Pre-built carrier site integrations, auto-login + download, feeds into AMS</td>
+<td>AMS systems via CommRecon</td>
+</tr>
+<tr>
+<td><strong>Eleviant vBots</strong></td>
+<td>RPA bots for commission reconciliation (Travelers, Berkley, Markel confirmed)</td>
+<td>Applied Epic, AMS360</td>
+</tr>
+<tr>
+<td><strong>WinsurTech Junction</strong></td>
+<td>Downloads AL3/IVANS carrier files, converts to JSON/Excel, maps to DB</td>
+<td>AMS/CRM systems — <strong>free tier</strong></td>
+</tr>
+<tr>
+<td><strong>IVANS Exchange</strong></td>
+<td>Industry standard carrier-to-agency data network (700+ carriers). Carriers push data</td>
+<td>Applied Epic, HawkSoft, NowCerts, EZLynx, most P&amp;C AMS</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="medicare-carrier-commission-formats">Medicare Carrier Commission Formats<a class="headerlink" href="#medicare-carrier-commission-formats" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Carrier</th>
+<th>Portal</th>
+<th>Statement Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Humana</strong></td>
+<td>Humana Agent Portal / Vantage</td>
+<td>Pipe-delimited TXT, PDF</td>
+</tr>
+<tr>
+<td><strong>UnitedHealthcare</strong></td>
+<td>UHC/UHOne Broker Portal</td>
+<td>Electronic statements (format not documented publicly)</td>
+</tr>
+<tr>
+<td><strong>Aetna</strong></td>
+<td>Producer World</td>
+<td>Electronic statements</td>
+</tr>
+<tr>
+<td><strong>Anthem/Elevance</strong></td>
+<td>Anthem Broker Portal</td>
+<td>Electronic statements (uses ETIN for agent ID)</td>
+</tr>
+<tr>
+<td><strong>Cigna</strong></td>
+<td>Cigna Broker Portal</td>
+<td>Commission statements, BOB exports</td>
+</tr>
+<tr>
+<td><strong>Centene/WellCare</strong></td>
+<td>Centene Workbench</td>
+<td>Commission history/statements</td>
+</tr>
+</tbody>
+</table>
+<p><strong>No carrier offers a REST API for agents to pull commission data.</strong> CMS sets max rates ($705/yr initial, $353/yr renewal for MA in 2025) but provides no commission data to agents.</p>
+<hr />
+<h2 id="industry-standards">Industry Standards<a class="headerlink" href="#industry-standards" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>IVANS/AL3</strong> — Dominant P&amp;C carrier-to-agency data exchange. Health/life carriers rarely participate.</li>
+<li><strong>ACORD 1206</strong> — Life/annuity commission statement XML standard (18+ years old, still primary).</li>
+<li><strong>EDI 820</strong> — Premium payment remittance (employer-to-carrier), <strong>not</strong> used for commission data.</li>
+<li><strong>No standard exists</strong> for health insurance commission statements — every carrier has a different format.</li>
+</ul>
+<hr />
+<h2 id="key-takeaways-for-compass">Key Takeaways for Compass<a class="headerlink" href="#key-takeaways-for-compass" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Compass's approach is the industry standard</strong> — carrier-specific importers (Humana pipe-delimited, generic CSV/XLSX) is exactly how AgencyBloc, Commission Tracker, and most established tools work.</p>
+</li>
+<li>
+<p><strong>Compass differentiators vs. competitors</strong> (see <a href="../#key-differentiators">Business Plan — Key Differentiators</a>):</p>
+</li>
+<li>Desktop-native (no SaaS subscription, data stays local) — see <a href="../tech-stack/">Tech Stack</a></li>
+<li>Carrier-specific parsers (beyond generic column mapping)</li>
+<li>No recurring cost ($45-900/mo for competitors)</li>
+<li>
+<p>Rate tables for expected payment verification</p>
+</li>
+<li>
+<p><strong>The competitive frontier is AI-powered parsing</strong> (Fintary, Eventual Treasury) — accepting any carrier format and auto-detecting columns via ML/LLM instead of per-carrier import templates. See <a href="../#phase-5-ai-assistant">Business Plan — Phase 5 — AI Assistant</a> for Compass's AI roadmap.</p>
+</li>
+<li>
+<p><strong>Automatic carrier portal scraping</strong> is rare — only BenefitsGuide/Carrier Connect and Synatic do it explicitly. It's technically fragile (carrier portal redesigns break scrapers).</p>
+</li>
+<li>
+<p><strong>Potential expansion opportunities</strong> (see <a href="../#product-roadmap">Business Plan — Product Roadmap</a> for phased plan):</p>
+</li>
+<li>More carrier-specific importers (Aetna, UHC, Cigna, Anthem, WellCare)</li>
+<li>FMO statement import (agents through FMOs get FMO-formatted statements)</li>
+<li>HealthSherpa CSV import for ACA book-of-business reconciliation</li>
+<li>QuickBooks export/integration (most-requested accounting feature in this space)</li>
+</ol>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">Related</p>
+<ul>
+<li>Deep dive into ingestion methods, IVANS/Medicare, FMO partnerships, and AI reconciliation: <a href="../commission-deep-dive/">Commission Ingestion Deep Dive</a></li>
+<li>Business plan and competitive positioning: <a href="../">Business Plan</a></li>
+<li>Technical architecture: <a href="../tech-stack/">Tech Stack</a></li>
+<li>AI operating system: AIOS</li>
+</ul>
+</div>
+<hr />
+<h2 id="sources">Sources<a class="headerlink" href="#sources" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.agencybloc.com/commissions-management/">AgencyBloc Commissions+</a></li>
+<li><a href="https://www.globenewswire.com/news-release/2025/04/29/3070291/27604/en/Applied-Announces-New-AI-Powered-Accounting-Automation-Solution.html">Applied Recon (Apr 2025)</a></li>
+<li><a href="https://carrierconnect.ai/">Carrier Connect</a></li>
+<li><a href="https://www.synatic.com/solutions/autodb-commission">Synatic AutoDB Commission</a></li>
+<li><a href="https://www.fintary.com/">Fintary</a> | <a href="https://siliconangle.com/2025/11/05/fintary-lands-10m-modernize-insurance-commission-management/">$10M Series A</a></li>
+<li><a href="https://eventualtreasury.com/">Eventual Treasury</a></li>
+<li><a href="https://www.mivation.com/products/xcelerator">Mivation Xcelerator</a></li>
+<li><a href="https://www.useascend.com/solutions/directbill">Ascend Direct Bill</a></li>
+<li><a href="https://commission-tracker.com/">Commission Tracker</a></li>
+<li><a href="https://www.qcommission.com/industries/industries-two/insurance-overview.html">QCommission Insurance</a></li>
+<li><a href="https://greenwavecommissions.com/">GreenWave Commissions</a></li>
+<li><a href="https://agencycomp.com/">AgencyComp</a></li>
+<li><a href="https://nextagency.com/commission-tracking/">NextAgency / NextCommission</a></li>
+<li><a href="https://www.commissionly.io/insurance-commission-tracker/">Commissionly.io</a></li>
+<li><a href="https://www.benefitsguide.com/blog/fully-automated-commissions-solution-built-into-benefitsguide">BenefitsGuide</a></li>
+<li><a href="https://www.hawksoft.com/agency-management-system/tour/carrier-downloads.html">HawkSoft Carrier Downloads</a></li>
+<li><a href="https://www.ezlynx.com/blog/posts/import-commission-statements/">EZLynx Commission Import</a></li>
+<li><a href="https://www.nowcerts.com/features/carrier-downloads">NowCerts Carrier Downloads</a></li>
+<li><a href="https://www.ivans.com/for-agents/products/ivans-download/">IVANS Download</a></li>
+<li><a href="https://www.eleviant.com/commission-statement-reconciliation-bot/">Eleviant Commission Bot</a></li>
+<li><a href="https://winsurtech.com/">WinsurTech</a></li>
+<li><a href="https://www.vertafore.com/products/insurance-commission-tracking-software/sircon-compensation">Vertafore Sircon Compensation</a></li>
+<li><a href="https://www.prnewswire.com/news-releases/new-strategic-partnership-between-connecturedrx-and-evolvenxt-unifies-agent-onboarding-enrollment-and-commissions-302464426.html">EvolveNXT + ConnectureDRX</a></li>
+<li><a href="https://e123insurtech.com/e123-commissions-for-carriers">e123 Commissions</a></li>
+<li><a href="https://sandis.io/platform/commission-handling">SANDIS Commission Handling</a></li>
+<li><a href="https://catalyit.com/guides/commission-management">Catalyit Commission Management Guide</a></li>
+<li><a href="https://www.medicareproapp.com/">MedicarePRO</a></li>
+<li><a href="https://www.producermax.com/">ProducerMAX</a></li>
+<li><a href="https://integrity.com/integrityconnect/">IntegrityCONNECT</a></li>
+<li><a href="https://ritterim.com/blog/the-best-insurance-commission-tracking-software-for-agents-and-agencies/">Ritter Commission Software Review</a></li>
+<li><a href="https://blog.healthsherpa.com/agents/top-ways-to-use-healthsherpa-agent-export-report/">HealthSherpa Export Reports</a></li>
+<li><a href="https://www.cms.gov/medicare/health-drug-plans/managed-care-marketing/medicare-marketing-guidelines/agent-broker-compensation">CMS Agent Broker Compensation</a></li>
+</ul>
+<hr />
+<h2 id="deep-dive-carrier-portal-scraping-rpa-for-commission-data-feb-2027-update">Deep Dive: Carrier Portal Scraping &amp; RPA for Commission Data (Feb 2027 Update)<a class="headerlink" href="#deep-dive-carrier-portal-scraping-rpa-for-commission-data-feb-2027-update" title="Permanent link">&para;</a></h2>
+<h3 id="1-carrier-connect-carrierconnectai-technical-details">1. Carrier Connect (carrierconnect.ai) — Technical Details<a class="headerlink" href="#1-carrier-connect-carrierconnectai-technical-details" title="Permanent link">&para;</a></h3>
+<p><strong>What it is:</strong> The first dedicated automated commission statement download service for employee benefits brokers. Built as a standalone middleware service, not a full CRM/AMS.</p>
+<p><strong>How it works technically:</strong>
+- RPA bots log into carrier portals overnight using stored agent credentials
+- Statements are downloaded as soon as they post online
+- Downloaded files are organized into secure, carrier-labeled folders accessible on the broker's desktop
+- PDF statements are handled by human staff who manually enter payment records into Excel format (not fully automated for PDFs)
+- Excel files are auto-converted to vendor-required import formats
+- Supports multi-agent organizations (handles multiple agent logins within one org)</p>
+<p><strong>MFA handling:</strong> Not explicitly documented publicly. Their infrastructure runs on AWS (EC2 + PEM access control), and they implement 2FA on their own platform. The implication is that they either: (a) negotiate with carriers for service account access, (b) use TOTP shared secret approach (see section 4 below), or (c) require attended handoff for MFA-protected portals.</p>
+<p><strong>Carriers supported:</strong> Not publicly listed. Marketing says "all carrier commission statements" for employee benefits, suggesting broad coverage of health/life/dental/vision carriers.</p>
+<p><strong>Pricing:</strong> Not publicly disclosed. Contact sales only.</p>
+<p><strong>Security:</strong> HIPAA compliant, AWS-hosted, HTTPS/SSL/TLS, database encryption, audit logs, EC2 deployment with PEM access control.</p>
+<p><strong>Integration:</strong> Zapier-based (connects to thousands of apps). Also integrates directly with BenefitsGuide CRM (their parent product).</p>
+<p><strong>BenefitsGuide integration specifics:</strong>
+- Carrier Connect downloads and organizes statements
+- Data is auto-uploaded into BenefitsGuide Commissions module
+- System maps commission line items to correct benefit policies
+- Reconciliation: prompts user to verify statement total matches bank deposit
+- Once confirmed, data is inserted with a single click</p>
+<p><strong>Source:</strong> <a href="https://carrierconnect.ai/">Carrier Connect</a> | <a href="https://www.benefitsguide.com/blog/fully-automated-commissions-solution-built-into-benefitsguide">BenefitsGuide Blog</a></p>
+<hr />
+<h3 id="2-synatic-autodb-commission-technical-details">2. Synatic AutoDB Commission — Technical Details<a class="headerlink" href="#2-synatic-autodb-commission-technical-details" title="Permanent link">&para;</a></h3>
+<p><strong>What it is:</strong> Enterprise-grade insurance data middleware from Synatic (a data integration platform company). Part of their broader insurance solution suite that includes CommRecon (reconciliation) and AgencyFuse Match (policy matching).</p>
+<p><strong>How it works technically:</strong>
+- Pre-built integrations log into carrier websites using agent credentials
+- Automates commission statement access and download from carrier sites
+- Automates commission calculations
+- Output converted to AMS-compatible format: <strong>AL3</strong> (ACORD standard fixed-width), XLS, XML, JSON, or any other format
+- Commission reports accessible through AMS at any time</p>
+<p><strong>Carriers with pre-built integrations:</strong> Not publicly enumerated. Marketing says "leading carriers" with "pre-built and fully customizable integrations." Their partner ecosystem includes: HubSpot, Fenris Digital, Salesforce, <strong>Vertafore</strong> (Orange Partner Program member), Ferro, HawkSoft, Nexus, and ACORD.</p>
+<p><strong>AMS integration:</strong> Strong Vertafore ecosystem integration (AMS360, Sagitta). Also integrates with HawkSoft, and any AMS that accepts AL3 or XLS imports.</p>
+<p><strong>AL3 support:</strong> Key differentiator. Can download AL3 files from carriers and MGA partners and convert to XLS, XML, JSON, or any other format. AL3 is ACORD's fixed-width batch format for P&amp;C policy and commission data download.</p>
+<p><strong>Pricing:</strong> Enterprise/custom. Not publicly disclosed.</p>
+<p><strong>Key limitation:</strong> Primarily P&amp;C-focused. Health/Medicare carriers rarely provide AL3 feeds. More useful for agencies with mixed P&amp;C + benefits books.</p>
+<p><strong>Source:</strong> <a href="https://www.synatic.com/solutions/autodb-commission">Synatic AutoDB Commission</a> | <a href="https://insurance.synatic.com/">Synatic Insurance Solutions</a> | <a href="https://www.globenewswire.com/news-release/2024/01/30/2820284/0/en/Synatic-Joins-Vertafore-s-Orange-Partner-Program.html">Vertafore Partnership</a></p>
+<hr />
+<h3 id="3-eleviant-vbots-now-coventus-technical-details">3. Eleviant vBots (now Coventus) — Technical Details<a class="headerlink" href="#3-eleviant-vbots-now-coventus-technical-details" title="Permanent link">&para;</a></h3>
+<p><strong>What it is:</strong> RPA bots purpose-built for insurance agency workflows. Recently rebranded from Eleviant to Coventus, product line renamed to vBots.ai.</p>
+<p><strong>How the commission reconciliation bot works:</strong>
+1. <strong>Statement retrieval:</strong> Bot downloads commission statements from carrier portals, email attachments, and shared folders
+2. <strong>Data extraction:</strong> Uses OCR + NLP + ML to parse statements in any format (PDF, Excel, CSV) — handles 150+ carriers
+3. <strong>Policy matching:</strong> Validates each policy based on transaction type, term, premium, and commission amount against AMS records
+4. <strong>Deposit validation:</strong> Validates transaction amount against deposit/GL entries
+5. <strong>Exception handling:</strong> Flags discrepancies for human review
+6. <strong>Posting:</strong> Once validated, posts the statement in the AMS</p>
+<p><strong>AMS integrations (confirmed):</strong>
+- Applied Epic
+- AMS360 (Vertafore)
+- HawkSoft
+- Veruna
+- Zywave
+- Marketing says "compatible with any AMS"</p>
+<p><strong>Carriers supported (confirmed names):</strong>
+- Progressive, Allstate, Nationwide, Cincinnati (AMS360 bot)
+- Travelers, W.R. Berkley, Markel (Applied Epic bot)
+- Claims 150+ carriers total</p>
+<p><strong>Implementation:</strong> 4-6 weeks, minimal implementation cost, monthly recurring fee. ROI from month 1.</p>
+<p><strong>Performance:</strong> For agencies processing 50+ statements and 1,000+ policies/month, saves minimum 50 hours/month. Bot completes in 50 seconds what a human does in 10 minutes. Zero error rate vs. 10-15% human error rate.</p>
+<p><strong>Pricing:</strong> Monthly recurring fee (not publicly disclosed). "Very minimal implementation cost."</p>
+<p><strong>Source:</strong> <a href="https://www.eleviant.com/commission-statement-reconciliation-bot/">Eleviant Commission Bot</a> | <a href="https://www.eleviant.com/ams360-direct-bill-reconciliation-bot/">AMS360 Bot</a> | <a href="https://vbots.ai/bots/direct-bill-commission-statement-reconciliation/">vBots.ai</a> | <a href="https://catalyit.com/solution-provider-directory/vbots-by-eleviant">Catalyit Profile</a></p>
+<hr />
+<h3 id="4-mfaauthentication-handling-how-rpa-bots-solve-it">4. MFA/Authentication Handling — How RPA Bots Solve It<a class="headerlink" href="#4-mfaauthentication-handling-how-rpa-bots-solve-it" title="Permanent link">&para;</a></h3>
+<p>This is the critical technical challenge. Here are the documented approaches:</p>
+<p><strong>Approach 1: TOTP Shared Secret (most common for unattended bots)</strong>
+- When enrolling MFA, most authenticator apps (Google Authenticator, Authy, etc.) provide a QR code containing a <strong>shared secret key</strong> (16-32 character base32 string)
+- Instead of scanning this QR with a phone, the secret is stored in a secure vault (e.g., Robocorp Control Room Vault, UiPath Orchestrator Assets)
+- The bot uses <code>pyotp</code> (Python) or UiPath's Two-Factor Authentication Activity to generate the same TOTP codes the phone app would
+- This works for any TOTP-based MFA (Google Authenticator, Microsoft Authenticator, Okta Verify in TOTP mode)
+- <strong>Limitation:</strong> Requires intercepting the shared secret during initial MFA enrollment — cannot extract it after the fact from an already-enrolled phone</p>
+<p><strong>Approach 2: Email/SMS OTP Relay</strong>
+- Bot monitors a shared email inbox or SMS gateway
+- When carrier portal sends OTP via email/SMS, bot reads it and enters it
+- Works but adds latency and complexity
+- Some carriers use SMS-only MFA which requires a virtual phone number or SMS API</p>
+<p><strong>Approach 3: Attended Handoff (hybrid)</strong>
+- Human handles login + MFA challenge
+- Once authenticated, hands control to unattended bot for download tasks
+- Session cookies/tokens persist for the bot's work session
+- Simplest but requires human availability at bot run time</p>
+<p><strong>Approach 4: Service Account / API Token</strong>
+- Some carriers offer "service accounts" or persistent API tokens for trusted integrators
+- No public evidence that health/Medicare carriers offer this to individual agencies
+- More likely available to large aggregators like Carrier Connect or Synatic through business relationships</p>
+<p><strong>Tools/libraries for MFA automation:</strong>
+- <a href="https://rpaframework.org/libraries/mfa/">RPA Framework MFA library</a> (Python, wraps <code>pyotp</code>)
+- <a href="https://marketplace.uipath.com/listings/two-steps-authentication-component">UiPath Two-Factor Authentication Activities</a>
+- <a href="https://github.com/robocorp/example-mfa-otp">Robocorp MFA example</a>
+- <code>pyotp</code> Python library directly (for DIY approaches)</p>
+<hr />
+<h3 id="5-open-source-diy-tools">5. Open-Source / DIY Tools<a class="headerlink" href="#5-open-source-diy-tools" title="Permanent link">&para;</a></h3>
+<p><strong>No dedicated open-source tool exists for scraping carrier commission portals.</strong> The closest options:</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>What It Does</th>
+<th>Limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/AojdevStudio/insurance-web-scraper">AojdevStudio/insurance-web-scraper</a></td>
+<td>Python scraper for dental insurance guidelines from Aetna, Cigna, MetLife, UHC provider portals. YAML config per carrier. MIT license</td>
+<td>Scrapes guidelines/benefits info, not commission statements. But architecture is relevant (YAML config per carrier)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/unclecode/crawl4ai">Crawl4AI</a></td>
+<td>LLM-friendly web crawler/scraper</td>
+<td>General purpose, not insurance-specific. Could be adapted</td>
+</tr>
+<tr>
+<td><a href="https://github.com/seleniumbase/SeleniumBase">SeleniumBase</a></td>
+<td>Python framework for web automation with bot-detection bypass</td>
+<td>General purpose, has anti-detection features</td>
+</tr>
+<tr>
+<td>Playwright (Python/Node)</td>
+<td>Modern browser automation</td>
+<td>Best foundation for DIY carrier portal scraper</td>
+</tr>
+</tbody>
+</table>
+<p><strong>DIY approach with Playwright (what it would take):</strong>
+1. Per-carrier login script (URL, credential fields, submit flow)
+2. MFA handler (TOTP shared secret + pyotp, or email OTP relay)
+3. Navigation to commission statements section (carrier-specific selectors)
+4. Download trigger + file save
+5. Statement parser (reuse Compass's existing carrier-specific importers)
+6. Scheduling (cron job, running headful or headless)</p>
+<p><strong>Estimated effort per carrier:</strong> 2-4 days for initial development, ongoing maintenance when portals change. This is essentially what Carrier Connect and Synatic have productized.</p>
+<hr />
+<h3 id="6-legalcompliance-implications">6. Legal/Compliance Implications<a class="headerlink" href="#6-legalcompliance-implications" title="Permanent link">&para;</a></h3>
+<h4 id="the-core-legal-question-is-scraping-a-carrier-portal-legal">The Core Legal Question: Is Scraping a Carrier Portal Legal?<a class="headerlink" href="#the-core-legal-question-is-scraping-a-carrier-portal-legal" title="Permanent link">&para;</a></h4>
+<p><strong>Key distinction: public vs. authenticated pages.</strong></p>
+<p>The landmark <strong>hiQ Labs v. LinkedIn</strong> case (9th Circuit, 2022) established that scraping <strong>publicly available</strong> data does not violate the Computer Fraud and Abuse Act (CFAA). However, carrier commission portals are <strong>authenticated</strong> (behind login), which changes the analysis significantly.</p>
+<p><strong>CFAA (Computer Fraud and Abuse Act):</strong>
+- Accessing a computer "without authorization" or "exceeding authorized access" is a federal crime
+- After <strong>Van Buren v. United States</strong> (Supreme Court, 2021), the CFAA's "exceeds authorized access" provision is narrower — it means accessing areas of a system you're not allowed to access at all, not accessing permitted areas for improper purposes
+- An agent logging into their own portal with their own credentials is "authorized" — the question is whether automated access exceeds that authorization
+- <strong>Key risk:</strong> If the carrier's Terms of Service explicitly prohibit automated/bot access, scraping could constitute "unauthorized access" under a breach of contract theory, even if it doesn't violate the CFAA</p>
+<p><strong>Terms of Service violations:</strong>
+- Most major websites (and likely carrier portals) include TOS language prohibiting "automated access," "scraping," "bots," and "non-human interaction"
+- Violating TOS alone does not create CFAA criminal liability (post-Van Buren)
+- But it CAN create civil liability: breach of contract, trespass to chattels, or misappropriation claims
+- hiQ ultimately settled with LinkedIn for $500K and was permanently enjoined from scraping — showing that even winning the CFAA argument doesn't mean scraping is consequence-free</p>
+<p><strong>HIPAA considerations:</strong>
+- Commission statements contain member names, plan types, and policy details — this is PHI or at minimum PII
+- Any automated system handling this data must maintain HIPAA compliance
+- Data in transit must be encrypted (HTTPS), data at rest must be encrypted
+- Credential storage must be secure (not plaintext)
+- Audit logging is required</p>
+<p><strong>Practical risk assessment for a small agency:</strong>
+- <strong>Low risk:</strong> Using RPA to automate downloading YOUR OWN commission statements from a portal you're authorized to use, with your own credentials, for your own business purposes
+- <strong>Medium risk:</strong> Doing so in violation of explicit TOS prohibiting automated access — risk is breach of contract claim
+- <strong>High risk:</strong> Accessing another agent's data, scraping at scale beyond normal usage patterns, or reselling data
+- <strong>Reality:</strong> No carrier has (publicly) sued an agent for automating their own commission downloads. The business relationship matters more than TOS enforcement.</p>
+<p><strong>Sources:</strong>
+- <a href="https://calawyers.org/privacy-law/ninth-circuit-holds-data-scraping-is-legal-in-hiq-v-linkedin/">hiQ v. LinkedIn (9th Circuit)</a>
+- <a href="https://en.wikipedia.org/wiki/HiQ_Labs_v._LinkedIn">hiQ v. LinkedIn Wikipedia</a>
+- <a href="https://www.termsfeed.com/blog/web-scraping-laws/">Web Scraping Laws - TermsFeed</a>
+- <a href="https://www.browserless.io/blog/is-web-scraping-legal">Is Web Scraping Legal 2025 - Browserless</a>
+- <a href="https://www.finnegan.com/en/insights/blogs/incontestable/data-scraping-claims-cfaa-out-contract-and-copyright-in.html">Data Scraping Claims - Finnegan</a></p>
+<hr />
+<h3 id="7-carrier-portal-export-capabilities-current-state">7. Carrier Portal Export Capabilities (Current State)<a class="headerlink" href="#7-carrier-portal-export-capabilities-current-state" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Carrier</th>
+<th>Portal</th>
+<th>What's Available</th>
+<th>Automated Download Friendliness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Humana</strong></td>
+<td>Agent Portal / Vantage</td>
+<td>Pipe-delimited TXT, PDF. No API for commissions specifically. Has <a href="https://developers.humana.com/apis/agent/agent-api/doc">Agents API</a> and <a href="https://developers.humana.com/apis/agent-api/doc">Reporting API</a> on developer portal (enrollment data, agent data — not commission statements)</td>
+<td>Medium — TXT format is machine-parseable but no official automation path</td>
+</tr>
+<tr>
+<td><strong>UnitedHealthcare</strong></td>
+<td>UHOne Broker Portal / Jarvis</td>
+<td>Commission statements downloadable from any year/month in "a variety of formats." <a href="https://thebrokerageinc.com/how-to-use-uhc-jarvis/">Jarvis</a> is the newer interface</td>
+<td>Medium-High — multiple format options, historical access</td>
+</tr>
+<tr>
+<td><strong>Aetna</strong></td>
+<td>Producer World / direct.aetna.com</td>
+<td>Commission statements online. <a href="https://developerportal.aetna.com/gettingstarted">Developer portal</a> exists but focused on member-facing data (Interoperability APIs), not agent commissions</td>
+<td>Low — no known API or bulk export for commissions</td>
+</tr>
+<tr>
+<td><strong>MetLife</strong></td>
+<td>Broker Portal</td>
+<td>Self-service commission tool. Designed to "reduce commission processing time and ensure commissions are paid quicker"</td>
+<td>Unknown — limited public documentation</td>
+</tr>
+<tr>
+<td><strong>Cigna</strong></td>
+<td>Broker Portal / <a href="https://developer.cigna.com/docs/service-apis">Developer Portal</a></td>
+<td>Commission statements available. Developer portal has service APIs but focused on member/provider data</td>
+<td>Low — developer APIs don't cover commissions</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The trend:</strong> Carriers are slowly improving self-service portals (UHC Jarvis is a good example), but <strong>no carrier offers a REST API for commission data download</strong>. The best case is downloadable CSV/Excel from the portal. PDFs remain common, especially for older/smaller carriers.</p>
+<p><strong>IVANS/AL3:</strong> Still the only carrier-to-agency automated data pipeline, but almost exclusively P&amp;C. Health/life/Medicare carriers have not adopted it at any meaningful scale.</p>
+<hr />
+<h3 id="8-fragility-of-scraping-approaches">8. Fragility of Scraping Approaches<a class="headerlink" href="#8-fragility-of-scraping-approaches" title="Permanent link">&para;</a></h3>
+<p><strong>How often do carrier portals break scrapers?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Impact</th>
+<th>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Full portal redesign</strong></td>
+<td>Breaks everything — must rebuild scraper from scratch</td>
+<td>Every 2-5 years per carrier</td>
+</tr>
+<tr>
+<td><strong>UI framework migration</strong> (e.g., Angular to React)</td>
+<td>Breaks all selectors, may change auth flow</td>
+<td>Every 3-5 years</td>
+</tr>
+<tr>
+<td><strong>Minor UI updates</strong></td>
+<td>May break specific selectors (button IDs, CSS classes)</td>
+<td>Multiple times per year</td>
+</tr>
+<tr>
+<td><strong>Anti-bot detection</strong> (Cloudflare, reCAPTCHA, etc.)</td>
+<td>Can block headless browsers entirely</td>
+<td>Increasing trend</td>
+</tr>
+<tr>
+<td><strong>MFA changes</strong> (adding MFA, changing MFA provider)</td>
+<td>Breaks auth flow, may require re-enrollment</td>
+<td>Unpredictable</td>
+</tr>
+<tr>
+<td><strong>Session/cookie policy changes</strong></td>
+<td>Can break session persistence</td>
+<td>1-2 times per year</td>
+</tr>
+<tr>
+<td><strong>URL structure changes</strong></td>
+<td>Breaks navigation scripts</td>
+<td>Occasional</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Industry consensus from RPA providers:</strong>
+- The Lab Consulting: "configured different versions of the same bot to handle each carrier's specific format" — implying per-carrier maintenance burden
+- vBots/Eleviant: 4-6 week implementation per AMS + carrier combination
+- General RPA wisdom: "A scraper is never truly 'finished.' Plan for ongoing maintenance from the start."
+- Aspire Systems: "Legacy software may lack APIs, so bots must mimic human keystrokes, which can be fragile if systems update"
+- "Changing payer rules can break RPA scripts unless they're maintained regularly"</p>
+<p><strong>Estimated maintenance burden:</strong>
+- ~2-8 hours per carrier per breakage event
+- Expect 2-4 breakage events per carrier per year
+- For 10 carriers: ~40-320 hours/year of maintenance
+- This is why Carrier Connect and Synatic can charge ongoing fees — the maintenance is the product</p>
+<p><strong>Mitigation strategies used by commercial providers:</strong>
+1. <strong>Selector resilience:</strong> Use data attributes and ARIA labels instead of CSS classes (less likely to change)
+2. <strong>Visual AI/OCR:</strong> Instead of DOM selectors, use screen recognition (what vBots does with OCR + ML)
+3. <strong>Monitoring + alerting:</strong> Automated checks that detect when a scraper fails, triggering maintenance
+4. <strong>Headful browser mode:</strong> Some anti-bot systems only block headless browsers
+5. <strong>Rate limiting:</strong> Mimic human browsing speed to avoid detection</p>
+<hr />
+<h3 id="9-non-portal-alternatives-to-scraping">9. Non-Portal Alternatives to Scraping<a class="headerlink" href="#9-non-portal-alternatives-to-scraping" title="Permanent link">&para;</a></h3>
+<p>Before building a scraper, consider these alternative data acquisition methods:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>How It Works</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Email parsing</strong></td>
+<td>Many carriers email commission statements. Set up a shared inbox, parse attachments automatically</td>
+<td>No portal login needed, no anti-bot risk</td>
+<td>Not all carriers do this; email format varies</td>
+</tr>
+<tr>
+<td><strong>SFTP/secure file delivery</strong></td>
+<td>Some carriers/FMOs can push files via SFTP to agency server</td>
+<td>Most reliable automated method, industry-standard secure</td>
+<td>Requires carrier cooperation, usually only for larger agencies</td>
+</tr>
+<tr>
+<td><strong>FMO/upline portal</strong></td>
+<td>If contracted through FMO, download consolidated statements from FMO portal instead</td>
+<td>Fewer portals to scrape, FMO may offer better export formats</td>
+<td>Adds FMO dependency, may have less detail</td>
+</tr>
+<tr>
+<td><strong>IVANS Download</strong></td>
+<td>Carrier pushes data via IVANS network to AMS</td>
+<td>Fully automated, industry standard</td>
+<td>P&amp;C only; health/Medicare carriers not participating; requires compatible AMS</td>
+</tr>
+<tr>
+<td><strong>Carrier developer APIs</strong></td>
+<td>Humana and Cigna have developer portals</td>
+<td>Official, stable, no scraping needed</td>
+<td>Currently don't cover commission data — enrollment/member data only</td>
+</tr>
+<tr>
+<td><strong>Manual download + smart import</strong></td>
+<td>Agent downloads monthly, Compass parses with carrier-specific importers</td>
+<td>Zero legal risk, zero maintenance, proven</td>
+<td>Manual step remains</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="10-recommendations-for-compass">10. Recommendations for Compass<a class="headerlink" href="#10-recommendations-for-compass" title="Permanent link">&para;</a></h3>
+<p><strong>Short-term (what you're doing now is correct):</strong>
+- Manual download + carrier-specific importers is the lowest-risk, lowest-maintenance approach
+- Adding more carrier importers (Aetna, UHC, Cigna, Anthem) increases value significantly
+- Consider email attachment parsing as a next step — many agents already have commission statement emails</p>
+<p><strong>Medium-term (if demand warrants it):</strong>
+- Playwright-based optional scraper module (opt-in, agent provides their own credentials)
+- Per-carrier YAML/TOML config files (login URL, selectors, download path)
+- TOTP shared secret storage in OS keyring for MFA
+- Run on a schedule (cron/systemd timer) since Compass is desktop-native
+- Start with 2-3 most popular carriers (Humana, UHC, Aetna)</p>
+<p><strong>Long-term (the real opportunity):</strong>
+- AI-powered statement parsing (LLM-based column detection) to eliminate per-carrier import maps
+- This is what Fintary raised $12.8M to build
+- Could use local LLM (Ollama) for privacy — no PHI leaves the machine
+- Dramatically reduces maintenance vs. scraping</p>
+<p><strong>What NOT to build:</strong>
+- Don't build scraping as a core feature — it's a maintenance nightmare
+- Don't store carrier credentials in your own backend/database — too much liability
+- Don't try to bypass anti-bot protections — it escalates the legal risk</p>
+<p><strong>Sources for this section:</strong>
+- <a href="https://thelabconsulting.com/robotic-process-automation-for-insurance-direct-bill-commissions-reconciliations/">The Lab Consulting - RPA Insurance Commissions</a>
+- <a href="https://www.uipath.com/community-blog/tutorials/automate-despite-multi-factor-authentication">UiPath MFA Automation</a>
+- <a href="https://rpaframework.org/libraries/mfa/">RPA Framework MFA</a>
+- <a href="https://axiom.ai/blog/5-problems-webscrapers">Axiom.ai - Web Scraper Problems</a>
+- <a href="https://simplefractal.com/success-stories/payer-portal-automation/">Simple Fractal - Payer Portal RPA Case Study</a>
+- <a href="https://agentblog.nationwide.com/agency-management/technology/ways-agents-and-carriers-can-collaborate-on-insurance-data-downloads/">Nationwide - Agent/Carrier Data Download Collaboration</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.instant", "toc.integrate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
