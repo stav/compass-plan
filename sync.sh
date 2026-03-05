@@ -16,6 +16,7 @@ DOCS_DIR="$SCRIPT_DIR/docs"
 # Source file → output file mapping
 declare -A FILE_MAP=(
   ["Business Plan.md"]="index.md"
+  ["Product Roadmap.md"]="product-roadmap.md"
   ["Commission Ingestion Deep Dive.md"]="commission-deep-dive.md"
   ["Commission Tracking Research.md"]="commission-tracking.md"
   ["Eligibility Lookup Research.md"]="eligibility-research.md"
@@ -35,6 +36,7 @@ import re, sys
 
 PAGE_MAP = {
     "Business Plan": "index.md",
+    "Product Roadmap": "product-roadmap.md",
     "Commission Ingestion Deep Dive": "commission-deep-dive.md",
     "Commission Tracking Research": "commission-tracking.md",
     "Eligibility Lookup Research": "eligibility-research.md",
@@ -100,7 +102,7 @@ for short, full in ANCHOR_FIXES.items():
     text = text.replace(short, full)
 
 # Strip links to excluded pages (keep display text, remove link)
-EXCLUDED_PAGES = {"aios.md", "affiliate-program.md"}
+EXCLUDED_PAGES = {"aios.md", "affiliate-program.md", "campaigns-&-alerts-design.md", "web-architecture-plan.md", "better-auth-research.md", "eligibility-system-design.md"}
 def strip_excluded_links(t):
     def replace(m):
         return m[1]  # keep display text only

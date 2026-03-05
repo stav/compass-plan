@@ -1,7 +1,7 @@
 # Eligibility Lookup Research
 
 !!! info "Related"
-    - Product roadmap: [Business Plan — Phase 1.5 — Eligibility Lookups](index.md#phase-15-eligibility-lookups)
+    - Product roadmap: [Product Roadmap — Phase 1.5 — Eligibility Lookups](product-roadmap.md#phase-15-eligibility-lookups)
     - Commission ingestion: [Commission Ingestion Deep Dive](commission-deep-dive.md)
     - Technical architecture: [Tech Stack](tech-stack.md)
 

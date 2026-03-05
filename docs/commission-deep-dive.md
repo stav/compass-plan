@@ -308,7 +308,7 @@ Core fields shared across all carriers:
 
 5. **Biggest opportunity**: Column header fuzzy matching (auto-detect common field names in CSV/Excel) as a stepping stone toward AI format detection. Could reduce per-carrier setup time significantly without requiring full ML infrastructure.
 
-6. **LLM-powered parsing is nascent** — EXL built an insurance-specific LLM claiming 30% improvement over GPT-4/Claude. No vendor deploys raw LLM APIs for production commission parsing yet. The gap = opportunity for Compass to differentiate with local LLM for privacy. This feeds into the [Business Plan — Phase 5 — AI Assistant](index.md#phase-5-ai-assistant) roadmap and the broader AIOS vision.
+6. **LLM-powered parsing is nascent** — EXL built an insurance-specific LLM claiming 30% improvement over GPT-4/Claude. No vendor deploys raw LLM APIs for production commission parsing yet. The gap = opportunity for Compass to differentiate with local LLM for privacy. This feeds into the [Product Roadmap — Phase 6 — AI Assistant](product-roadmap.md#phase-6-ai-assistant) roadmap and the broader AIOS vision.
 
 ---
 

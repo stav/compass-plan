@@ -25,7 +25,7 @@ The product launches for alpha testing in April 2026, with a freemium model plan
 | **Cost structure** | Near-zero marginal cost (desktop app, no servers) — ~99% gross margin |
 | **Distribution** | Affiliate program (20% residual commission) + organic word of mouth |
 | **Moat** | Local-first privacy, carrier-specific importers, rate table verification — see [Tech Stack](tech-stack.md) |
-| **Expansion** | Web app, cloud sync, mobile client, CRM features, AI assistant, agency product (separate app) |
+| **Expansion** | Web app, cloud sync, mobile client, plan wizard, CRM features, AI assistant, communication campaigns, client portal, voice agent, agency product (separate app) |
 
 ---
 
@@ -124,110 +124,22 @@ Rationale:
 
 ## Product Roadmap
 
-### Phase 1 — Desktop MVP + Marketing Site (Current)
+See [Product Roadmap](product-roadmap.md) for full phase details.
 
-Local-first desktop app covering client/enrollment tracking and commission reconciliation. Single-user, offline-capable, data encrypted at rest. This is the foundation that establishes trust and proves value.
-
-The desktop download is an initial barrier to entry — agents need to see what they're getting before they'll install anything. A marketing site at compass.broker ships alongside the MVP with:
-
-- Product showcase — screenshots, feature walkthrough, demo videos
-- Clear explanation of the privacy/local-first value proposition
-- Download page with one-click install for Windows/macOS/Linux
-- Comparison table vs. SaaS competitors (price, privacy, features)
-
-### Phase 1.5 — Eligibility Lookups
-
-Built-in Medicare/Medicaid eligibility verification for an agent's clients. Instead of logging into multiple carrier portals or calling 1-800-MEDICARE, the agent checks eligibility directly from Compass against the client record they already have open.
-
-- Medicare Part A/B eligibility, MA plan enrollment status, MBI lookup
-- Medicaid/dual-eligible (D-SNP) verification
-- Integration targets: MARx (CMS Enterprise Portal), HETS (CMS 270/271), state Medicaid systems (Ohio MITS, etc.), carrier-specific portals (Devoted, Anthem)
-- Third-party API options: pVerify, Approved Admissions, Stedi (270/271)
-- High value for agents — saves time during enrollment season and client meetings
-- See [Eligibility Lookup Research](eligibility-research.md) for full landscape
-
-### Phase 2 — Web App (Free Tier)
-
-A lightweight browser-based version of Compass that lets agents try the product without downloading anything. This directly addresses the desktop distribution barrier — agents who are hesitant to install software can experience the core features in their browser first, then decide whether to download the desktop app (free, with full privacy) or upgrade to a paid cloud tier to keep using the web app.
-
-- Free-tier web app with the same 50-client limit as the desktop free tier
-- Core features: client tracking, enrollment management, basic commission import
-- Hosted at compass.broker — the marketing site becomes the front door, the web app is the on-ramp
-- Two conversion paths: (1) download the desktop app for free (privacy-first, offline, unlimited local use) or (2) upgrade to paid cloud tier for continued web access + sync
-- Lowers barrier to entry from "download and install unknown software" to "sign up and try it in your browser"
-- Requires cloud infrastructure (see Phase 2.5)
-
-### Phase 2.5 — Cloud Storage
-
-The backend infrastructure that powers both the web app (Phase 2) and optional desktop sync. Once trust is established, desktop users can opt in to sync their local database to the cloud for backup and cross-device access.
-
-- Powers the Phase 2 web app
-- Optional sync for desktop users — the local-first, privacy-respecting foundation remains
-- Unlocks recurring revenue at a higher tier (cloud infrastructure has real costs)
-- Addresses the "what if my laptop dies" concern
-- Prerequisite for Phase 3
-
-### Phase 3 — Mobile Client
-
-With cloud storage in place, offer a phone-based client — either a PWA or React Native app. Agents meet clients at kitchen tables, senior centers, and health fairs — having their book of business in their pocket is a natural fit.
-
-- Requires cloud storage (Phase 2.5)
-- PWA is lower cost to build/maintain; React Native if native feel is needed
-- Read-heavy use case (look up a client, check enrollment status) vs. desktop for heavy data entry
-
-### Phase 4 — CRM Features
-
-Add CRM capabilities to the solo-agent product: lead management, sales pipeline, activity tracking, follow-up reminders, and reporting. This deepens the value of Compass for individual agents beyond book-of-business management.
-
-- Lead capture and pipeline stages
-- Activity logging (calls, meetings, follow-ups)
-- Task/reminder system
-- Reporting and dashboards
-
-### Phase 5 — AI Assistant
-
-Built-in LLM interface that lets agents interact with their own data conversationally. On desktop, it's a chat sidebar. On the mobile client, it comes alive with speech-to-text and text-to-speech — the agent talks to Compass and Compass talks back, hands-free.
-
-Example queries:
-- "Who should I call today?"
-- "What's coming up next week?"
-- "Which clients have I lost recently?"
-- "Am I on track to hit my enrollment goal this quarter?"
-- "How much commission am I missing from Humana this month?"
-
-Key considerations:
-- The LLM has full context of the agent's book, enrollments, commissions, and activity history
-- STT/TTS on mobile makes it a true voice assistant for agents on the road between appointments
-- Privacy advantage: can run a local LLM on desktop (Ollama) so data never leaves the machine — aligns with the [research on local LLM for commission parsing](commission-deep-dive.md#key-takeaways-for-compass)
-- Cloud version can use a hosted model with the agent's encrypted data
-- This is a premium feature — strong justification for a higher pricing tier
-- Differentiator: no competitor offers a conversational AI layer over an agent's own book of business
-
-### Phase 6 — Compass for Agencies (Separate Application)
-
-A distinct product built for agencies, brokerages, and FMOs. This is not a feature added to the solo app — it's a separate application with fundamentally different architecture: authentication, user roles and permissions, shared databases, agency-level administration, and multi-agent workflows.
-
-- Multi-user with role-based access (owner, admin, agent, staff)
-- Shared client/enrollment database across the agency
-- Agent performance tracking and dashboards
-- Agency-level commission reconciliation and reporting
-- Downline management (for FMOs/uplines)
-- Per-seat pricing model
-- Likely cloud-native from the start (agencies expect shared access)
-
-This is a different buyer (agency owners), a different sales motion (B2B, longer sales cycle), and a different price point (per-seat, potentially $50-100+/seat/mo). The solo Compass app serves as the proving ground and pipeline — agents who love Compass individually become advocates for the agency product.
-
-### Expansion Implications
-
-| Phase | Revenue Impact | Market Expansion |
+| Phase | Name | Summary |
 |---|---|---|
-| Desktop MVP + Marketing Site | Freemium conversion | Solo agents |
-| Web App (Free Tier) | Lowers barrier to entry, widens funnel | Agents hesitant to download software |
-| Cloud Storage | Higher-tier subscription | Agents who want backup/access anywhere |
-| Mobile Client | Retention + stickiness | Field agents, AEP season use |
-| CRM Features | Higher retention, upsell | Solo agents wanting more than a book tracker |
-| AI Assistant | Premium tier, major differentiator | Agents who want a hands-free, voice-driven workflow |
-| Compass for Agencies | Per-seat B2B pricing | Small agencies, brokerages, FMOs — separate product and market |
+| 1 | Desktop MVP + Marketing Site | Local-first desktop app + compass.broker marketing site (current) |
+| 1.5 | Eligibility Lookups | Built-in Medicare/Medicaid eligibility verification |
+| 2 | Web App (Free Tier) | Browser-based version to lower barrier to entry |
+| 2.5 | Cloud Storage | Backend infrastructure for web app + optional desktop sync |
+| 3 | Mobile Client | PWA or React Native app for agents in the field |
+| 4 | Plan Wizard | Smart plan comparison with client/agent-aware recommendations |
+| 5 | CRM Features | Lead management, pipeline, activity tracking, reminders |
+| 6 | AI Assistant | Conversational LLM interface with voice on mobile, Plan Wizard integration |
+| 7 | Communication Campaigns | Email newsletters, SMS alerts, voice calls, drip sequences |
+| 8 | Client Portal | Client-facing web portal with AI chatbot and agent messaging |
+| 9 | Voice Agent | AI-powered inbound call handling, triage, and appointment booking |
+| 10 | Compass for Agencies | Separate multi-user product for agencies, brokerages, and FMOs |
 
 ---
 
@@ -299,6 +211,103 @@ Compass sits in an underserved gap: agents who need more than spreadsheets but d
 
 ---
 
+## Legal & Compliance
+
+| Area | Status | Notes |
+|---|---|---|
+| **Business entity** | TBD | LLC or S-Corp formation — determines liability protection, tax treatment, and ability to enter contracts |
+| **Contracts** | TBD | Beta tester agreements (liability waiver, feedback expectations), affiliate program agreements (commission terms, termination), vendor/partner agreements |
+| **Terms of Service** | TBD | Required before public launch and payment processing — covers acceptable use, limitations of liability, dispute resolution |
+| **Privacy Policy** | TBD | Required — especially given local-first privacy marketing claims. Must accurately describe what data is collected, stored, and transmitted (carrier sync, telemetry, crash reports) |
+| **HIPAA** | TBD | Desktop app stores PHI locally (client names, Medicare IDs, health plan info). Determine if Compass is a Business Associate. If agents use the cloud sync (Phase 2.5), a BAA is almost certainly required. Consult a healthcare privacy attorney. |
+| **Trademark** | TBD | "Compass" is generic — research conflicts in insurance/fintech software space. Consider filing for "MedStar Compass" or "Compass by MedStar" if defensible. Domain compass.broker is secured. |
+| **Software license / EULA** | TBD | End-user license agreement for desktop app distribution — covers usage rights, restrictions, warranty disclaimers, limitation of liability |
+| **Insurance** | TBD | E&O / professional liability insurance for a software product that handles commission data and could surface incorrect reconciliation results. General liability for the business. |
+| **Code signing certificates** | TBD | Windows EV code signing certificate (SmartScreen reputation), Apple Developer ID for macOS notarization — required for distribution without security warnings |
+| **Data breach obligations** | TBD | If Compass stores PHI or PII and a breach occurs (especially in cloud phases), state breach notification laws apply. Have an incident response plan before launch. |
+
+### Legal Priorities by Phase
+
+| Phase | Legal Requirements |
+|---|---|
+| Alpha/Beta (2026) | Business entity formation, beta tester agreements, basic EULA, code signing certs |
+| Public Launch (Q1 2027) | ToS, privacy policy, HIPAA assessment, affiliate agreements, payment processor terms |
+| Cloud / Web App (Phase 2+) | BAA if handling PHI in cloud, data processing agreements, breach notification plan |
+| Client Portal (Phase 8) | Client-facing ToS, consent for AI chatbot interactions, data sharing agreements |
+| Agency Product (Phase 10) | Enterprise contracts, SLA terms, per-seat licensing agreements |
+
+---
+
+## Financial Plan
+
+### Current Cost Structure
+
+| Expense | Monthly | Annual | Notes |
+|---|---|---|---|
+| AI development tools | ~$200 | ~$2,400 | Claude, Cursor, etc. |
+| Domain (compass.broker) | — | ~$40 | Secured |
+| Code signing (Windows) | — | ~$200-400 | EV certificate |
+| Apple Developer Program | — | $99 | Required for macOS notarization |
+| GitHub (hosting, CI) | $0 | $0 | Free tier sufficient for now |
+| **Total pre-launch** | **~$200** | **~$2,900** | Near-zero burn rate |
+
+### Post-Launch Cost Additions (2027+)
+
+| Expense | Monthly | Notes |
+|---|---|---|
+| Payment processing (Stripe) | ~3% of revenue | Variable — scales with MRR |
+| Affiliate payouts | ~20-25% of revenue | Residual commissions to referrers |
+| Cloud infrastructure (Phase 2+) | $50-200 | Scales with web app users |
+| Legal (ongoing) | ~$100-300 | Retainer or as-needed for contract updates |
+| Business insurance | ~$50-100 | E&O / general liability |
+| Support tooling | $0-50 | Email/Discord initially, paid tool later |
+| **Total post-launch overhead** | **~$200-650** | Before affiliate payouts and payment processing |
+
+### Break-Even Analysis
+
+At ~$200/mo pre-launch costs, the business is already near break-even (development is self-funded labor, not cash outflow). Once charging begins:
+
+| Scenario | MRR | After affiliates (75%) | After costs (~$400) | Net Monthly |
+|---|---|---|---|---|
+| Conservative (300 users × $19) | $5,700 | $4,275 | $3,875 | $3,875 |
+| Moderate (400 users × $24) | $9,600 | $7,200 | $6,800 | $6,800 |
+| Optimistic (500 users × $29) | $14,500 | $10,875 | $10,475 | $10,475 |
+
+Break-even point: ~15-20 paying users covers all fixed costs. Affiliate payouts only apply to referred users (not all users), so effective margins are higher than shown above.
+
+### Runway
+
+As a self-funded solo founder with near-zero costs, runway is effectively unlimited at current burn rate. The risk is opportunity cost of time, not cash.
+
+---
+
+## Operations
+
+### Support
+
+| Phase | Channel | Approach |
+|---|---|---|
+| Alpha/Beta (2026) | Direct (email/phone/text) | Personal relationship with testers — fast feedback loops |
+| Public Launch (2027) | Email + Discord community | Dedicated support email, Discord server for peer support and feature requests |
+| Growth (2027+) | Help docs + community + email | Self-serve knowledge base, community-driven answers, email for bugs/billing |
+
+### Release Cadence
+
+- **Alpha/Beta:** Ship as needed, direct communication with testers on updates
+- **Post-launch:** Biweekly release cycle for bug fixes, monthly for features
+- **Carrier importer updates:** Hotfix releases when a carrier changes their statement format — these are time-sensitive (agents can't reconcile until the importer is updated)
+- **Tauri auto-updater** handles distribution — no manual re-download needed
+
+### Carrier Importer Maintenance
+
+Carrier statement formats change without notice. Mitigation:
+- Modular importer architecture — each carrier is an independent parser
+- AI-assisted format detection as a fallback (see [Commission Ingestion Deep Dive](commission-deep-dive.md))
+- Community reporting — agents flag when an import fails, triggering a priority fix
+- Target: <48hr turnaround on importer fixes during active commission seasons
+
+---
+
 ## Key Metrics to Track
 
 - **Free tier signups** — Total users, growth rate
@@ -315,12 +324,9 @@ Compass sits in an underserved gap: agents who need more than spreadsheets but d
 
 - [ ] Exact pricing ($19 vs. $24 vs. $29/mo) — validate with alpha/beta testers
 - [ ] Annual discount? (e.g., $19/mo or $190/year — 2 months free)
-- [ ] Code signing certificate for Windows/macOS distribution
 - [ ] Marketing site content and design (compass.broker — Phase 1)
-- [ ] Terms of service, privacy policy, HIPAA considerations for paid product
 - [ ] Payment processing (Stripe, Paddle, LemonSqueezy?)
 - [ ] License key / activation system for paid tier
-- [ ] Support channel (email? Discord? Community forum?)
 - [ ] Long-term vision: lifestyle business vs. growth company vs. acquisition target
 
 ---

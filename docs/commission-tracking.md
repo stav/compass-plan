@@ -121,11 +121,11 @@
    - No recurring cost ($45-900/mo for competitors)
    - Rate tables for expected payment verification
 
-3. **The competitive frontier is AI-powered parsing** (Fintary, Eventual Treasury) — accepting any carrier format and auto-detecting columns via ML/LLM instead of per-carrier import templates. See [Business Plan — Phase 5 — AI Assistant](index.md#phase-5-ai-assistant) for Compass's AI roadmap.
+3. **The competitive frontier is AI-powered parsing** (Fintary, Eventual Treasury) — accepting any carrier format and auto-detecting columns via ML/LLM instead of per-carrier import templates. See [Product Roadmap — Phase 6 — AI Assistant](product-roadmap.md#phase-6-ai-assistant) for Compass's AI roadmap.
 
 4. **Automatic carrier portal scraping** is rare — only BenefitsGuide/Carrier Connect and Synatic do it explicitly. It's technically fragile (carrier portal redesigns break scrapers).
 
-5. **Potential expansion opportunities** (see [Business Plan — Product Roadmap](index.md#product-roadmap) for phased plan):
+5. **Potential expansion opportunities** (see [Product Roadmap](product-roadmap.md) for phased plan):
    - More carrier-specific importers (Aetna, UHC, Cigna, Anthem, WellCare)
    - FMO statement import (agents through FMOs get FMO-formatted statements)
    - HealthSherpa CSV import for ACA book-of-business reconciliation

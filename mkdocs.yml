@@ -28,6 +28,7 @@ theme:
 
 nav:
   - Business Plan: index.md
+  - Product Roadmap: product-roadmap.md
   - Commission Deep Dive: commission-deep-dive.md
   - Commission Tracking: commission-tracking.md
   - Eligibility Research: eligibility-research.md
