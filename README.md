@@ -9,9 +9,10 @@ Compass business plan documentation published as a static site with [MkDocs Mate
 The source of truth is `~/Obsidian/Resources/Compass/`. Edit docs there, then sync and deploy:
 
 ```bash
-./sync.sh          # Convert Obsidian → docs/
-mkdocs serve       # Preview at http://127.0.0.1:8000/compass-plan/
-mkdocs gh-deploy   # Publish to GitHub Pages
+./sync.sh        # Convert Obsidian → docs/
+mkdocs serve     # Preview at http://127.0.0.1:8000/compass-plan/
+git commit       # Update git history so mkdocs has the proper hash
+mkdocs gh-deploy # Publish to GitHub Pages
 ```
 
 ### Setup
