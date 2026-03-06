@@ -120,8 +120,22 @@ A web portal where an agent's clients can log in to view their own plan details,
 - **AI chatbot** — Clients can ask Medicare questions ("Does my plan cover this medication?", "When is open enrollment?", "What's my copay for a specialist?") and get answers grounded in their specific plan data
 - **Appointment scheduling** — Clients request or book time with their agent
 - **Document sharing** — Agents share plan comparison PDFs, enrollment confirmations, or other documents
-- **Branded experience** — Agent's name, photo, and contact info — reinforces the relationship
+- **Standardized experience** — Agent's name, photo, and contact info — every portal looks professional out of the box, zero setup required
 - **Requires:** Cloud sync (Phase 2.5), web infrastructure (Phase 2), paid tier
+
+### Implementation Strategy
+
+Phased rollout to validate the concept before building full infrastructure:
+
+1. **Marketing site mockups** (now) — Static HTML demos on compass.broker/portal showing the client experience: My Plan, Messages, AI chatbot, Appointments. Sells the vision with zero infrastructure.
+2. **"View as client" preview** (Phase D) — Toggle in the web app at `/clients/$clientId/portal-preview` that renders the client's read-only portal view. Lets agents see what their clients will see. Builds the actual UI components.
+3. **`portal.compass.broker`** (Phase 8 proper) — Separate app (`apps/portal/` in turborepo), same Convex backend, client auth (not agent auth). Agent enables from settings, clients sign in with email.
+
+### Design Decisions
+
+- **Standardized, not customizable** — v1 portals all look the same. Agents don't want to design templates; they want to flip a switch. Light branding (logo, accent color) can come later.
+- **Separate domain** — `portal.compass.broker` keeps client-facing and agent-facing apps cleanly separated (different auth, different permissions, different UI).
+- **AI grounded in plan data** — Chatbot answers are specific to the client's actual plan, formulary, and provider network — not generic Medicare info.
 
 ## Phase 9 — Voice Agent
 

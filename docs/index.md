@@ -20,7 +20,7 @@ The product launches for alpha testing in April 2026, with a freemium model plan
 |---|---|
 | **Product** | Desktop app for Medicare agent client tracking + commission verification |
 | **Customer** | Solo Medicare insurance agents (100-500 client books) |
-| **Pricing** | Freemium — free tier (50 clients), paid tier at $19-29/mo (unlimited + commissions) |
+| **Pricing** | Freemium — Free (50 clients, 1 carrier), Broker $25/mo, Pro $100/mo, Agency custom |
 | **Revenue type** | Monthly recurring subscription (MRR) |
 | **Cost structure** | Near-zero marginal cost (desktop app, no servers) — ~99% gross margin |
 | **Distribution** | Affiliate program (20% residual commission) + organic word of mouth |
@@ -84,34 +84,33 @@ Compass combines both capabilities in a single desktop application:
 
 ## Revenue Model
 
-### Freemium
+### Pricing Tiers
 
-|                   | Free Tier     | Paid Tier     |
-| ----------------- | ------------- | ------------- |
-| Clients           | Up to 50      | Unlimited     |
-| Enrollments       | Full tracking | Full tracking |
-| Carrier sync      | Full access   | Full access   |
-| Commission import | Up to 200     | Unlimited     |
-| Rate tables       | Full access   | Full access   |
-| Reconciliation    | Up to 200     | Full access   |
-| Reports           | Basic         | Advanced      |
+|                   | Free          | Broker ($25/mo) | Pro ($100/mo) | Agency (Custom) |
+| ----------------- | ------------- | --------------- | ------------- | --------------- |
+| Clients           | Up to 50      | Up to 100       | Unlimited     | Unlimited       |
+| Carriers          | 1             | Up to 5         | Unlimited     | Unlimited       |
+| Enrollments       | Full tracking | Full tracking   | Full tracking | Full tracking   |
+| Commission import | Basic         | Full            | Full          | Full            |
+| Reconciliation    | Basic         | Full            | Full          | Full            |
+| Multi-user roles  | —             | —               | —             | Yes             |
+| Support           | None          | Email           | Priority      | Dedicated       |
 
 ### Pricing Strategy
 
-**Target range: $19-29/mo** (TBD based on alpha/beta feedback)
-
 Rationale:
-- Well below AgencyBloc ($65+/mo), Radiusbob ($34/mo), MedicarePRO ($45/mo)
-- Low enough that a single recovered missed commission pays for a year of Compass
-- A typical initial MA commission is ~$700 — if Compass catches even one missed payment, the agent recovers 2-3 years of subscription cost
+- **Free** — hooks agents in, lets them experience the core product. 1-carrier limit encourages upgrade as they add appointments.
+- **Broker ($25/mo)** — well below AgencyBloc ($65+/mo), Radiusbob ($34/mo), MedicarePRO ($45/mo). Covers most solo agents with 5 carriers.
+- **Pro ($100/mo)** — unlimited everything for high-volume agents. A single recovered missed MA commission (~$700) pays for 7 months.
+- **Agency (Custom)** — per-seat pricing for agencies/FMOs. Different buyer, different sales motion. See Phase 10.
 
 ### Revenue Projections (Year 1 of Charging — 2027)
 
-| Scenario | Price/mo | Paying users | Monthly revenue |
+| Scenario | Avg price/mo | Paying users | Monthly revenue |
 |---|---|---|---|
-| Conservative | $19 | 300 | $5,700 |
-| Moderate | $24 | 400 | $9,600 |
-| Optimistic | $29 | 500 | $14,500 |
+| Conservative | $25 | 200 | $5,000 |
+| Moderate | $40 | 350 | $14,000 |
+| Optimistic | $50 | 500 | $25,000 |
 
 ### Unit Economics
 
@@ -322,9 +321,9 @@ Carrier statement formats change without notice. Mitigation:
 
 ## Open Questions
 
-- [ ] Exact pricing ($19 vs. $24 vs. $29/mo) — validate with alpha/beta testers
-- [ ] Annual discount? (e.g., $19/mo or $190/year — 2 months free)
-- [ ] Marketing site content and design (compass.broker — Phase 1)
+- [x] Pricing decided — Free / Broker $25 / Pro $100 / Agency custom
+- [ ] Annual discount? (e.g., $25/mo or $250/year — 2 months free)
+- [x] Marketing site live at compass.broker with products, pricing, features, download pages
 - [ ] Payment processing (Stripe, Paddle, LemonSqueezy?)
 - [ ] License key / activation system for paid tier
 - [ ] Long-term vision: lifestyle business vs. growth company vs. acquisition target
