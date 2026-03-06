@@ -561,6 +561,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Phase 8 — Client Portal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementation-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementation Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Decisions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -833,8 +861,21 @@
 <li><strong>AI chatbot</strong> — Clients can ask Medicare questions ("Does my plan cover this medication?", "When is open enrollment?", "What's my copay for a specialist?") and get answers grounded in their specific plan data</li>
 <li><strong>Appointment scheduling</strong> — Clients request or book time with their agent</li>
 <li><strong>Document sharing</strong> — Agents share plan comparison PDFs, enrollment confirmations, or other documents</li>
-<li><strong>Branded experience</strong> — Agent's name, photo, and contact info — reinforces the relationship</li>
+<li><strong>Standardized experience</strong> — Agent's name, photo, and contact info — every portal looks professional out of the box, zero setup required</li>
 <li><strong>Requires:</strong> Cloud sync (Phase 2.5), web infrastructure (Phase 2), paid tier</li>
+</ul>
+<h3 id="implementation-strategy">Implementation Strategy<a class="headerlink" href="#implementation-strategy" title="Permanent link">&para;</a></h3>
+<p>Phased rollout to validate the concept before building full infrastructure:</p>
+<ol>
+<li><strong>Marketing site mockups</strong> (now) — Static HTML demos on compass.broker/portal showing the client experience: My Plan, Messages, AI chatbot, Appointments. Sells the vision with zero infrastructure.</li>
+<li><strong>"View as client" preview</strong> (Phase D) — Toggle in the web app at <code>/clients/$clientId/portal-preview</code> that renders the client's read-only portal view. Lets agents see what their clients will see. Builds the actual UI components.</li>
+<li><strong><code>portal.compass.broker</code></strong> (Phase 8 proper) — Separate app (<code>apps/portal/</code> in turborepo), same Convex backend, client auth (not agent auth). Agent enables from settings, clients sign in with email.</li>
+</ol>
+<h3 id="design-decisions">Design Decisions<a class="headerlink" href="#design-decisions" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Standardized, not customizable</strong> — v1 portals all look the same. Agents don't want to design templates; they want to flip a switch. Light branding (logo, accent color) can come later.</li>
+<li><strong>Separate domain</strong> — <code>portal.compass.broker</code> keeps client-facing and agent-facing apps cleanly separated (different auth, different permissions, different UI).</li>
+<li><strong>AI grounded in plan data</strong> — Chatbot answers are specific to the client's actual plan, formulary, and provider network — not generic Medicare info.</li>
 </ul>
 <h2 id="phase-9-voice-agent">Phase 9 — Voice Agent<a class="headerlink" href="#phase-9-voice-agent" title="Permanent link">&para;</a></h2>
 <p>An AI-powered voice agent that answers the phone on behalf of the agent. Handles common inquiries, routes urgent calls, and can triage client needs when the agent is unavailable — especially valuable during AEP when agents are in back-to-back appointments.</p>
